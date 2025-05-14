@@ -9,7 +9,7 @@ class Book:
         self.is_borrowed = False
 
     def __str__(self):
-        return self.title + ' - ' + self.author
+        return self.id + self.title + ' - ' + self.author
     
     def getAvailability(self) -> str:
         if self.is_borrowed: 
